@@ -1,3 +1,18 @@
+// Link
+// Frequency Counter - sameFrequency
+
+// Write a function called sameFrequency. Given two positive integers, find out if the two numbers have the same frequency of digits.
+
+// Your solution MUST have the following complexities:
+// Time: O(N)
+// Sample Input:
+
+// sameFrequency (182, 281) => true
+// sameFrequency (34,14) => false
+// sameFrequency (3589578, 5879385) => true
+// sameFrequency (22,222) => false
+
+
 function sameFrequency(n1, n2){
     let n1String = String(n1);
     let n2String = String(n2)
@@ -5,7 +20,7 @@ function sameFrequency(n1, n2){
         return false;
     }
 
-    const n1Frequency = stringToObj(n1String); 
+    const n1Frequency = stringToFrequenceObj(n1String); 
     const n2Chars = n2String.split('')
     for (let index = 0; index < n2Chars.length; index++) {
         const element = n2Chars[index];
@@ -19,7 +34,7 @@ function sameFrequency(n1, n2){
 }
   
 
-let stringToObj = (str) => {
+let stringToFrequenceObj = (str) => {
     if(!str){
         return {};
     }
@@ -29,4 +44,8 @@ let stringToObj = (str) => {
     }, {})
 }
 
-console.log(sameFrequency(123,21));
+console.log('sameFrequency(0,1) '+ sameFrequency(0,1));
+console.log('sameFrequency(123,12) '+ sameFrequency(123,12));
+console.log('sameFrequency(123,213) '+ sameFrequency(123,213));
+console.log('sameFrequency(3589578, 5879385) '+ sameFrequency(3589578, 5879385));
+
