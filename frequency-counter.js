@@ -1,4 +1,4 @@
-// Link
+// Link https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/learn/quiz/4410598#overview
 // Frequency Counter - sameFrequency
 
 // Write a function called sameFrequency. Given two positive integers, find out if the two numbers have the same frequency of digits.
