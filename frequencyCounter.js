@@ -20,7 +20,7 @@ function sameFrequency(n1, n2){
         return false;
     }
 
-    const n1Frequency = stringToFrequenceObj(n1String); 
+    const n1Frequency = stringToFrequencyObj(n1String); 
     const n2Chars = n2String.split('')
     for (let index = 0; index < n2Chars.length; index++) {
         const element = n2Chars[index];
@@ -34,7 +34,7 @@ function sameFrequency(n1, n2){
 }
   
 
-let stringToFrequenceObj = (str) => {
+let stringToFrequencyObj = (str) => {
     if(!str){
         return {};
     }
