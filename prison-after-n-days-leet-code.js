@@ -29,7 +29,7 @@
 // Day 6: [0, 0, 1, 0, 1, 1, 0, 0]
 // Day 7: [0, 0, 1, 1, 0, 0, 0, 0]
 
-function prisonAfterNDays(cells: number[], N: number): number[] {
+function prisonAfterNDays(cells, N) {
     let newCount = N;
     const mod = N % 14;
     newCount = mod == 0 ? 14 : mod;
@@ -48,3 +48,5 @@ function prisonAfterNDays(cells: number[], N: number): number[] {
     }
     return cells;
 };
+
+console.log(prisonAfterNDays([0,1,0,1,1,0,0,1],7))
